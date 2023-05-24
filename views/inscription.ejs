@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Création d'utilisateur</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <%- include('header') %>
+  
+  <div class="container mt-5">
+    <h2>Création d'utilisateur</h2>
+    <form action="/user" method="POST">
+      <div class="form-group">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" class="form-control" id="pseudo" placeholder="Entrez votre pseudo" required name="pseudo">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required name="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Créer</button>
+    </form>
+  </div>
+</body>
+</html>

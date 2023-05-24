@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Touites</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <%- include('header') %>
+        <div class="container">
+            <h1 class="mt-4 mb-4">Touites</h1>
+            <div class="row">
+                <% touites.forEach(touite => { %>
+                    <div class="col-md-4">
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <%= touite.username %>
+                          </h5>
+                          <p class="card-text">
+                            <%= touite.texte %>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  <% }); %>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <%- include('header') %>
+    <form method="POST" action="/touite">
+        <div class="mb-3">
+          <label for="texte" class="form-label">Texte du touite</label>
+          <textarea class="form-control" id="text" name="texte" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="pseudo" class="form-label">Nom d'utilisateur</label>
+          <input type="text" class="form-control" id="pseudo" name="pseudo" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter le touite</button>
+      </form>
+</body>
